@@ -62,4 +62,34 @@ const NavBar = (props) => {
   const handleCloseAvatarMenu = () => {
     setAnchorEl(null);
   };
-  const listaNavegacionLocal = navegacion 
+  const listaNavegacionLocal = navegacion || [];
+  return (
+    <>
+      <CssBaseline />
+      <AppBar>
+        <Toolbar style={{ backgroundColor: "#fff" }}>
+          <div className={classesNavBar.sectionMobile}>
+            <IconButton
+              aria-label="delete"
+              color="primary"
+              className={classes.margin}
+            >
+              <MenuIcon fontSize="large" />
+            </IconButton>
+          </div>
+
+          <div className={classesNavBar.sectionDesktop}>
+            <div className={classesNavBar.growmid} />
+          </div>
+          <img
+            className="logo"
+            alt="TEMP SSISDEU_logo"
+            src={logo}
+            onClick={onNavigateHome}
+          />
+          <div className={classesNavBar.growmid} />
+          {listaNavegacionLocal &&
+            listaNavegacionLocal.map((navegacionItem, index) => (
+              <>
+                {" "}
+                <div key={index} className={c
