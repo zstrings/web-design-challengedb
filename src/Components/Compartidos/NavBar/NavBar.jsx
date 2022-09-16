@@ -117,4 +117,34 @@ const NavBar = (props) => {
               />
               <IconButton
                 aria-haspopup="true"
-              
+                color="primary"
+                onClick={handleClickAvatarMenu}
+                className={classes.margin}
+              >
+                <ExpandMoreIcon fontSize="small" />
+              </IconButton>
+              <Menu
+                id="simple-menu"
+                anchorEl={anchorEl}
+                keepMounted
+                open={Boolean(anchorEl)}
+                onClose={handleCloseAvatarMenu}
+              >
+                <MenuItem key={1} onClick={handleCloseAvatarMenu}>
+                  Perfil
+                </MenuItem>
+                <MenuItem key={2} onClick={handleCloseAvatarMenu}>
+                  Cerrar sesión
+                </MenuItem>
+              </Menu>
+            </>
+          )}
+
+          <div className={classesNavBar.growmid} />
+        </Toolbar>
+      </AppBar>
+      <Toolbar id="back-to-top-anchor" />
+    </>
+  );
+};
+export default withRouter(NavBar);
