@@ -92,4 +92,29 @@ const NavBar = (props) => {
             listaNavegacionLocal.map((navegacionItem, index) => (
               <>
                 {" "}
-                <div key={index} className={c
+                <div key={index} className={classesNavBar.sectionDesktop}>
+                  <Link
+                    key={index + 1}
+                    style={{ cursor: "pointer" }}
+                    onClick={(path) => redirect(navegacionItem.path)}
+                  >
+                    {navegacionItem.label}
+                  </Link>
+                </div>
+                <div key={index + 2} className={classesNavBar.growmid} />
+              </>
+            ))}
+
+          <div className={classesNavBar.grow} />
+          <div className={classesNavBar.growmid} />
+          {listaNavegacionLocal && listaNavegacionLocal.lenght > 0 && (
+            <>
+              <img
+                className="avatar"
+                alt="user"
+                src={avatarUrl}
+                onClick={handleClickAvatarMenu}
+              />
+              <IconButton
+                aria-haspopup="true"
+              
