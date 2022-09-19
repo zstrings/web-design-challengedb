@@ -45,4 +45,37 @@ const TopHeader = (props) => {
     listPath = props.history.location.pathname.split("/").splice(1);
     const listRef = makeRef(listPath);
     console.log("reff", listRef);
-    currentPage 
+    currentPage = listRef[listRef.length - 1];
+    localization = listRef;
+  }
+  if (!(localization && localization.length > 0)) {
+    return <></>;
+  } else {
+    return (
+      <header className="top-header-container">
+        <Breadcrumbs aria-label="breadcrumb">
+          {localization.map((element,index) => (
+            <Link
+            key={index+1}
+              style={{ color: "#bcbcbc" }}
+              href={element.href}
+              onClick={handleClick}
+            >
+              {"" + element.page}
+            </Link>
+          ))}
+          <Typography style={{ color: "#ffffff" }}>
+            {" "}
+            {currentPage?.page || ""}
+          </Typography>
+        </Breadcrumbs>
+
+        <h2 variant="h6">
+          {subtitulo || "Subtitlex"}
+        </h2>
+      </header>
+    );
+  }
+};
+
+export default TopHeader;
