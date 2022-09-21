@@ -173,4 +173,39 @@ export default function JTableSSJ(props) {
     rowsPerPage > 0
       ? rows.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
       : rows;
-  const han
+  const handleChangePage = (event, newPage) => {
+    setPage(newPage);
+  };
+
+  const handleChangeRowsPerPage = (event) => {
+    setRowsPerPage(parseInt(event.target.value, 10));
+    setPage(0);
+  };
+  useEffect(() => {
+    setChecked(true);
+  },[]);
+  console.log("emptyRows", emptyRows);
+  return (
+    <Zoom
+      in={checked}
+      style={{ transitionDelay: checked ? "500ms" : "10ms" }}
+    >
+      <TableContainer component={Paper}>
+        {props.title ? (
+          <Toolbar className={classes.root}>
+            <Typography
+              className={classes.title}
+              variant="h6"
+              id="tableTitle"
+              component="div"
+            >
+              {props.title}
+            </Typography>
+          </Toolbar>
+        ) : (
+          <></>
+        )}
+
+        <Table className={classes.table} aria-label="custom pagination table">
+          <TableHead>
+   
