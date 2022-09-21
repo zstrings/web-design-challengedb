@@ -141,4 +141,36 @@ export const rows_example = [
   createData("Ice cream sandwich", 237, 9.0),
   createData("Jelly Bean", 375, 0.0),
   createData("KitKat", 518, 26.0),
-  createData("Lollipop", 392,
+  createData("Lollipop", 392, 0.2),
+  createData("Marshmallow", 318, 0),
+  createData("Nougat", 360, 19.0),
+  createData("Oreo", 437, 18.0),
+].sort((a, b) => (a.calories < b.calories ? -1 : 1));
+
+const useStyles2 = makeStyles((theme) => ({
+  table: {
+    minWidth: 500,
+  },
+  paper: {
+    padding: theme.spacing(2),
+    textAlign: "center",
+    color: theme.palette.text.secondary,
+  },
+}));
+
+export default function JTableSSJ(props) {
+  console.log('XXX->',props.rows);
+  const classes = useStyles2();
+  const { columns, rows, loading, fade } = props;
+  const [checked, setChecked] = React.useState(fade?false:true);
+
+  const [page, setPage] = React.useState(0);
+  const [rowsPerPage, setRowsPerPage] = React.useState(5);
+
+  const emptyRows =
+    rowsPerPage - Math.min(rowsPerPage, rows.length - page * rowsPerPage);
+  const rowsToShow =
+    rowsPerPage > 0
+      ? rows.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
+      : rows;
+  const han
