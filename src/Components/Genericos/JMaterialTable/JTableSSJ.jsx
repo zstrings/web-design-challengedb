@@ -208,4 +208,25 @@ export default function JTableSSJ(props) {
 
         <Table className={classes.table} aria-label="custom pagination table">
           <TableHead>
-   
+            <TableRow>
+              {columns.map((column) => (
+                <StyledTableCell align="left">{column.title}</StyledTableCell>
+              ))}
+            </TableRow>
+          </TableHead>
+          <TableBody>
+            {loading ? (
+              [1, 2, 3, 4, 5].map((row) => (
+                <StyledTableRow key={row}>
+                  {columns.map((column) =>
+                    column.render ? (
+                      <StyledTableCell component="th" scope="row">
+                        <Skeleton variant="circle">
+                          <Avatar />
+                        </Skeleton>
+                      </StyledTableCell>
+                    ) : (
+                      <StyledTableCell component="th" scope="row">
+                        <Skeleton width="100%">
+                          <Typography>.</Typography>
+     
