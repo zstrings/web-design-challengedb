@@ -229,4 +229,29 @@ export default function JTableSSJ(props) {
                       <StyledTableCell component="th" scope="row">
                         <Skeleton width="100%">
                           <Typography>.</Typography>
-     
+                        </Skeleton>
+                      </StyledTableCell>
+                    )
+                  )}
+                </StyledTableRow>
+              ))
+            ) : (
+              <>
+                <>
+                  {rowsToShow.map((row, index) => (
+                    <StyledTableRow key={index + 1}>
+                      {columns.map((column, index) => (
+                        <StyledTableCell component="th" scope="row">
+                          {column.render
+                            ? column.render(row)
+                            : row[column.field]}
+                        </StyledTableCell>
+                      ))}
+                    </StyledTableRow>
+                  ))}
+                </>
+                <>
+                  {rowsToShow === 0
+                    ? emptyRows > 0 && (
+                        <TableRow style={{ height: 53 * emptyRows }}>
+         
