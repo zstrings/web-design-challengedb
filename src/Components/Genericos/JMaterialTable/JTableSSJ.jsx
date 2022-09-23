@@ -254,4 +254,28 @@ export default function JTableSSJ(props) {
                   {rowsToShow === 0
                     ? emptyRows > 0 && (
                         <TableRow style={{ height: 53 * emptyRows }}>
-         
+                          <TableCell colSpan={10}>
+                            <div className={classes.paper}>
+                              {"No hay registros para mostrar"}
+                            </div>
+                          </TableCell>
+                        </TableRow>
+                      )
+                    : emptyRows > 0 && (
+                        <TableRow style={{ height: 53 * emptyRows }}>
+                          <TableCell colSpan={10}></TableCell>
+                        </TableRow>
+                      )}
+                </>
+              </>
+            )}
+          </TableBody>
+          <TableFooter>
+            <TableRow>
+              <ThemeProvider
+                theme={(outerTheme) =>
+                  createMuiTheme(outerTheme, locales["esES"])
+                }
+              >
+                <TablePagination
+                  rowsPerPageOptions={[5, 10, 25, { label: "All
