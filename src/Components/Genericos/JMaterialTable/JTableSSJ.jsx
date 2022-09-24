@@ -278,4 +278,24 @@ export default function JTableSSJ(props) {
                 }
               >
                 <TablePagination
-                  rowsPerPageOptions={[5, 10, 25, { label: "All
+                  rowsPerPageOptions={[5, 10, 25, { label: "All", value: -1 }]}
+                  //colSpan={3}
+                  count={rows.length}
+                  rowsPerPage={rowsPerPage}
+                  page={page}
+                  SelectProps={{
+                    inputProps: { "aria-label": "rows per page" },
+                    native: true,
+                  }}
+                  onChangePage={handleChangePage}
+                  onChangeRowsPerPage={handleChangeRowsPerPage}
+                  ActionsComponent={TablePaginationActions}
+                />
+              </ThemeProvider>
+            </TableRow>
+          </TableFooter>
+        </Table>
+      </TableContainer>
+    </Zoom>
+  );
+}
