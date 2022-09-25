@@ -12,4 +12,13 @@ const EntidadPrimariaMainPage =props=> {
     });
         return (
             <PageWrapper {...props}>
-                 <Route exact path="/entidad-primaria" component={()=><In
+                 <Route exact path="/entidad-primaria" component={()=><Institucion {...props}/>} />
+                 <Route exact path="/entidad-primaria/institucion" component={()=><Institucion {...props}/>} />
+                 <Route exact path="/entidad-primaria/pacientes" component={()=><Pacientes {...props}/>} />
+                 <Route exact path="/entidad-primaria/reportes" component={()=><Reportes {...props}/>} />
+                EntidadPrimaria
+            </PageWrapper>
+        );
+}
+
+export default EntidadPrimariaMainPage;
