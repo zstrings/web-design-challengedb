@@ -76,4 +76,7 @@ export const editarPersona = async (
     );
     return res.data;
   } catch (error) {
-    console.log(`Error 
+    console.log(`Error al editar a la persona con id ${id}: `, error);
+    return {};
+  }
+};
