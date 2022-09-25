@@ -34,3 +34,46 @@ export const listarPersonas = async () => {
     //return defaultResponse;
   } catch (error) {
     console.log(`Error al listar personas:`, error);
+    return defaultResponse;
+  }
+};
+
+/**
+ * Register a person in database
+ * @param {id,nombre,rol} persona
+ * @returns Aun no lo se xd
+ */
+export const registrarPersona = async (
+  persona = { id: 3, nombre: "Selena Gomez", rol: "paciente" }
+) => {
+  try {
+    const res = await axios.post(
+      REACT_APP_MAIN_SERVER + `/${baseURL}/registrar`,
+      persona
+    );
+    return res.data;
+  } catch (error) {
+    console.log(`Error al registrar persona ${persona}`, error);
+    return {};
+  }
+};
+
+/**
+ * Edits an existing person in to database *
+ * @param {*} id
+ * @param {nombre|rol} data
+ * @returns no se aun xd
+ */
+
+export const editarPersona = async (
+  id = 1,
+  data = { nombre: "Elmer Huerta", rol: "Doctor" }
+) => {
+  try {
+    const res = await axios.put(
+      REACT_APP_MAIN_SERVER + `/${baseURL}/editar${id}`,
+      data
+    );
+    return res.data;
+  } catch (error) {
+    console.log(`Error 
