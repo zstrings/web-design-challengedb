@@ -1,6 +1,7 @@
+
 import React, { Component } from 'react';
 
-class PsicologosXEntidadPrimaria extends Component {
+class PsicologosXGrupo extends Component {
     render() {
         return (
             <div>
@@ -10,4 +11,4 @@ class PsicologosXEntidadPrimaria extends Component {
     }
 }
 
-export default PsicologosXEntidadPrimaria;
+export default PsicologosXGrupo;
