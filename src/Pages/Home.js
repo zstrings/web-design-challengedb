@@ -36,4 +36,35 @@ const Home = (props) => {
   useEffect(() => {
     console.log("==>", props.history);
     /*  document.body.classList.add("account-page");
-    return document.body.classList.remov
+    return document.body.classList.remove("account-page"); */
+  });
+  function handleOpenDialog() {
+    setOpenDialog(true);
+  }
+  function handleCloseDialog() {
+    setOpenDialog(false);
+  }
+  const iniciarSesion = async (props) => {
+    //llamada añl back
+    alert("Inicio de sesión correcto");
+    const response = await llamadaBack(usuario);
+    if (response.auth) {
+      const rol = response.rol;
+      //props.history.push(`/${rol}`);
+      window.location.replace(`/${rol}`);
+    }
+    //props.history.push("/paciente");
+  };
+  return (
+    <div className="login container">
+      <div className="form">
+        <img src={logo_nobackgorund} alt="logo-serenity-login" />
+
+        <TextField
+          fullWidth
+          style={{ margin: "4% 2%" }}
+          id="outlined-password-input"
+          label="Correo"
+          autoComplete="current-password"
+          variant="outlined"
+      
