@@ -67,4 +67,43 @@ const Home = (props) => {
           label="Correo"
           autoComplete="current-password"
           variant="outlined"
-      
+          onChange={ingresoDeCorreooo}
+        />
+
+        <TextField
+          fullWidth
+          style={{ margin: "4% 2%" }}
+          id="outlined-password-input"
+          label="Password"
+          type="password"
+          autoComplete="current-password"
+          variant="outlined"
+          onChange={handleChangePassword}
+        />
+
+        <button
+          className="anchor"
+          style={{ alignSelf: "flex-end" }}
+          onClick={handleOpenDialog}
+        >
+          Recuperar contraseña
+        </button>
+        <Button
+          style={{ margin: "4% 2%" }}
+          color="primary"
+          variant="contained"
+          fullWidth
+          onClick={iniciarSesion}
+        >
+          Iniciar Sesion
+        </Button>
+      </div>
+      <DialogRecuperarContraseña
+        open={openDialog}
+        onCloseDialog={handleCloseDialog}
+      />
+    </div>
+  );
+};
+
+export defau
