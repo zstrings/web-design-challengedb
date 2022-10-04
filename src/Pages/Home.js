@@ -106,4 +106,4 @@ const Home = (props) => {
   );
 };
 
-export defau
+export default Home;
