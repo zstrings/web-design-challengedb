@@ -71,4 +71,43 @@ class AgendarCita extends Component {
   };
   addnewevent() {
     const { event_title, category_color, addneweventobj } = this.state;
-    let calendarApi = addnewev
+    let calendarApi = addneweventobj.view.calendar;
+
+    calendarApi.unselect(); // clear date selection
+
+    if (event_title) {
+      calendarApi.addEvent({
+        id: 10,
+        title: event_title,
+        className: category_color,
+        start: addneweventobj.startStr,
+        end: addneweventobj.endStr,
+        allDay: addneweventobj.allDay,
+      });
+    }
+    this.setState({ isnewevent: false });
+  }
+
+  onupdateModalClose() {
+    this.setState({
+      iseditdelete: false,
+      event_title: "",
+    });
+  }
+  oncreateeventModalClose() {
+    this.setState({
+      isnewevent: false,
+      event_title: "",
+    });
+  }
+  handleEventClick = (clickInfo) => {
+    this.setState({
+      iseditdelete: true,
+      event_title: clickInfo.event.title,
+      calenderevent: clickInfo.event,
+    });
+  };
+  removeevent() {
+    const { calenderevent } = this.state;
+    calenderevent.remove();
+    this.setState(
