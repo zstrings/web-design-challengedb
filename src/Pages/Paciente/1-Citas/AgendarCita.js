@@ -28,4 +28,47 @@ class AgendarCita extends Component {
           start: Date.now(),
           end: Date.now(),
           className: "bg-success",
-   
+      },
+      {
+          title: "Manuel T",
+          start: Date.now() + 168000000,
+          className: "bg-info",
+      },
+      {
+          title: "Manuel T",
+          start: Date.now() + 338000000,
+          className: "bg-primary",
+      },
+  ],
+  };
+
+  handleChange = (date) => {
+    this.setState({
+      startDate: date,
+    });
+  };
+
+  handleClose = () => {
+    this.setState({
+      isnewevent: false,
+      iseditdelete: false,
+      show: false,
+    });
+  };
+  handleEventClick = (clickInfo) => {
+    this.setState({
+      iseditdelete: true,
+      event_title: clickInfo.event.title,
+      calenderevent: clickInfo.event,
+    });
+  };
+
+  handleDateSelect = (selectInfo) => {
+    this.setState({
+      isnewevent: true,
+      addneweventobj: selectInfo,
+    });
+  };
+  addnewevent() {
+    const { event_title, category_color, addneweventobj } = this.state;
+    let calendarApi = addnewev
