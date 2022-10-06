@@ -110,4 +110,40 @@ class AgendarCita extends Component {
   removeevent() {
     const { calenderevent } = this.state;
     calenderevent.remove();
-    this.setState(
+    this.setState({ iseditdelete: false });
+  }
+  clickupdateevent() {
+    const { defaultEvents, calenderevent, event_title } = this.state;
+    const newArray = defaultEvents;
+    for (let i = 0; i < newArray.length; i++) {
+      if (newArray[i].id === parseInt(calenderevent.id)) {
+        newArray[i].title = event_title;
+      }
+    }
+    this.setState({ defaultEvents: newArray, iseditdelete: false });
+  }
+
+  handleClick() {
+    this.setState({
+      show: true,
+    });
+  }
+
+  componentDidMount() {
+    this.props.makeSubtitulo("DISPONIBILIDAD DE MI PSICÓLOGO");
+  }
+
+  render() {
+    const { defaultEvents } = this.state;
+    return (
+      <div
+        style={{
+          padding: "0 6%",
+          display: "flex",
+          flexDirection: "column",
+        }}
+      >
+        <div style={{ alignSelf: "flex-end" }}>
+          <Button color="primary" variant="contained">
+            Solicitar Cambio Psicólogo
+          </Butto
