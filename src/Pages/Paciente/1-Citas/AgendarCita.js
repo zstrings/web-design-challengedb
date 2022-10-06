@@ -146,4 +146,27 @@ class AgendarCita extends Component {
         <div style={{ alignSelf: "flex-end" }}>
           <Button color="primary" variant="contained">
             Solicitar Cambio Psicólogo
-          </Butto
+          </Button>
+          <br />
+          <br />
+        </div>
+
+        <FullCalendar
+          plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}
+          headerToolbar={{
+            left: "prev,next today",
+            center: "title",
+            right: "dayGridMonth,timeGridWeek,timeGridDay",
+          }}
+          initialView="dayGridMonth"
+          editable={true}
+          selectable={true}
+          selectMirror={true}
+          dayMaxEvents={true}
+          weekends={this.state.weekendsVisible}
+          initialEvents={defaultEvents} // alternatively, use the `events` setting to fetch from a feed
+          select={this.handleDateSelect}
+          // eventContent={renderEventContent} // custom render function
+          eventClick={(clickInfo) => this.handleEventClick(clickInfo)}
+          // eventsSet={this.handleEvents} // called after events are initialized/added/changed/removed
+          /* yo
