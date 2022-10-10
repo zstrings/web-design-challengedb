@@ -169,4 +169,33 @@ class AgendarCita extends Component {
           // eventContent={renderEventContent} // custom render function
           eventClick={(clickInfo) => this.handleEventClick(clickInfo)}
           // eventsSet={this.handleEvents} // called after events are initialized/added/changed/removed
-          /* yo
+          /* you can update a remote database when these fire:
+                              eventAdd={function(){}}
+                              eventChange={function(){}}
+                              eventRemove={function(){}}
+                              */
+        />
+      </div>
+    );
+  }
+
+  rendereventclick() {
+    const { event_title } = this.state;
+
+    return (
+      <form className="event-form">
+        <label>Change event name</label>
+        <div className="input-group">
+          <input
+            className="form-control"
+            type="text"
+            value={event_title}
+            onChange={(event) =>
+              this.setState({ event_title: event.target.value })
+            }
+          />
+          <span className="input-group-append">
+            <button
+              type="button"
+              className="btn btn-success btn-md"
+              onClick={() => t
