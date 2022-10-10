@@ -198,4 +198,37 @@ class AgendarCita extends Component {
             <button
               type="button"
               className="btn btn-success btn-md"
-              onClick={() => t
+              onClick={() => this.clickupdateevent()}
+            >
+              Save
+            </button>
+          </span>
+        </div>
+      </form>
+    );
+  }
+  renderaddnewevent() {
+    const { event_title } = this.state;
+
+    return (
+      <form>
+        <div className="row">
+          <div className="col-md-12">
+            <div className="form-group">
+              <label className="control-label">Event Name</label>
+              <input
+                className="form-control"
+                type="text"
+                name="title"
+                value={event_title}
+                onChange={(event) =>
+                  this.setState({ event_title: event.target.value })
+                }
+              />
+            </div>
+          </div>
+          <div className="col-md-12">
+            <div className="form-group">
+              <label className="control-label">Category</label>
+              <select
+                className="select form-control
