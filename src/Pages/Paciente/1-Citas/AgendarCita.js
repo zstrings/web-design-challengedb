@@ -257,4 +257,4 @@ class AgendarCita extends Component {
   }
 }
 
-export 
+export default AgendarCita;
