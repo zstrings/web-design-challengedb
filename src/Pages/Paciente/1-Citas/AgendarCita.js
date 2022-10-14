@@ -231,4 +231,30 @@ class AgendarCita extends Component {
             <div className="form-group">
               <label className="control-label">Category</label>
               <select
-                className="select form-control
+                className="select form-control"
+                name="category"
+                onChange={(event) =>
+                  this.setState({ category_color: event.target.value })
+                }
+              >
+                <option value="bg-danger">Danger</option>
+                <option value="bg-success">Success</option>
+                <option value="bg-purple">Purple</option>
+                <option value="bg-primary">Primary</option>
+                <option value="bg-pink">Pink</option>
+                <option value="bg-info">Info</option>
+                <option value="bg-inverse">Inverse</option>
+                <option value="bg-orange">Orange</option>
+                <option value="bg-brown">Brown</option>
+                <option value="bg-teal">Teal</option>
+                <option value="bg-warning">Warning</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </form>
+    );
+  }
+}
+
+export 
