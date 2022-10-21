@@ -60,4 +60,47 @@ const useStyles = makeStyles(theme => ({
     width: "38.2%"
   },
   advanceSettings: {
-    marginTop: 
+    marginTop: 16
+  }
+}));
+
+const defaultState = {
+  appId: "49c6791f99d2443daa15577f19e289de",
+  channel: "test-serenity-01",
+  uid: "",
+  token: "00649c6791f99d2443daa15577f19e289deIAAz9HmqpYh5qE+4e5DDSZiMbCFt8jYBmGunwcImOvXm7DqIwroAAAAAEADWh9Dj9pq5YAEAAQD1mrlg",
+  cameraId: "",
+  microphoneId: "",
+  mode: "rtc",
+  codec: "h264"
+};
+
+const reducer = (
+  state: typeof defaultState,
+  action: { type: string; [propName: string]: any }
+) => {
+  switch (action.type) {
+    default:
+      return state;
+    case "setAppId":
+      return {
+        ...state,
+        appId: action.value
+      };
+    case "setChannel":
+      return {
+        ...state,
+        channel: action.value
+      };
+    case "setUid":
+      return {
+        ...state,
+        uid: action.value
+      };
+    case "setToken":
+      return {
+        ...state,
+        token: action.value
+      };
+    case "setCamera":
+      re
