@@ -103,4 +103,36 @@ const reducer = (
         token: action.value
       };
     case "setCamera":
-      re
+      return {
+        ...state,
+        cameraId: action.value
+      };
+    case "setMicrophone":
+      return {
+        ...state,
+        microphoneId: action.value
+      };
+    case "setMode":
+      return {
+        ...state,
+        mode: action.value
+      };
+    case "setCodec":
+      return {
+        ...state,
+        codec: action.value
+      };
+  }
+};
+
+function VideoCallAgora(props:any) {
+  // Declaring different states used by our application.
+  const classes = useStyles();
+  const [isJoined, setisJoined] = useState(false);
+  const [isPublished, setIsPublished] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const [state, dispatch] = useReducer(reducer, defaultState);
+  const [agoraClient, setClient] = useState<any>(undefined)
+  // const agoraClient = AgoraRTC.createClient({ mode: state.mode, codec: state.codec });
+
+  /
