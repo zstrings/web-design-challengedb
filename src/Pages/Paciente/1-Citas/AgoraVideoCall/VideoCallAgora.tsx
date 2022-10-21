@@ -32,4 +32,32 @@ import { SnackbarProvider, useSnackbar } from "notistack";
 // These customs hooks let any components in the application 
 // to directly use the required parameters and create clean functional components.
 // useCamera hook returns a list of cameras when the hook is called
-//
+// useMicrophone hook returns a list of microphones when the hook is called
+// useMediaStream hook returns localStream, a list of remote streams and 
+// a contatenated list of localstream and remote streams when the hook is called
+import { useCamera, useMicrophone, useMediaStream, usePermission } from "./hooks";
+
+// This is an enhanced Web SDK. The enhancement basically converts the callback syntax into promises.
+// Rest of the code will use async/await syntax in conjuction with these promises.
+import AgoraRTC from "./utils/AgoraEnhancer";
+
+const useStyles = makeStyles(theme => ({
+  root: {
+    flexGrow: 1,
+    padding: 12
+  },
+  title: {
+    fontWeight: 400
+  },
+  divider: {
+    marginBottom: "32px"
+  },
+  buttonContainer: {
+    display: "flex",
+    justifyContent: "space-around"
+  },
+  buttonItem: {
+    width: "38.2%"
+  },
+  advanceSettings: {
+    marginTop: 
