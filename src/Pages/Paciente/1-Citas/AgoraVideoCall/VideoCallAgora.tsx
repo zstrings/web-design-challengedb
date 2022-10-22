@@ -135,4 +135,31 @@ function VideoCallAgora(props:any) {
   const [agoraClient, setClient] = useState<any>(undefined)
   // const agoraClient = AgoraRTC.createClient({ mode: state.mode, codec: state.codec });
 
-  /
+  // All hooks are called to get the necessary data
+  const permission = usePermission()
+  const cameraList = useCamera();
+  const microphoneList = useMicrophone();
+  let [localStream, remoteStreamList] = useMediaStream(agoraClient);
+
+  const { enqueueSnackbar } = useSnackbar();
+
+  const update = (actionType: string) => (e: React.ChangeEvent<unknown>) => {
+    return dispatch({
+      type: actionType,
+      value: (e.target as HTMLInputElement).value
+    });
+  };
+
+  const changeCamera = async (e: React.ChangeEvent<unknown>) => {
+    let cameraId = (e.target as HTMLInputElement).value;
+    if (cameraId == state.cameraId) {
+      return
+    } else {
+      update("setCamera")(e);
+      if (localStream) {
+        const stream = AgoraRTC.createStream({
+          audio: false,
+          video: true,
+          cameraId: cameraId,
+        });
+        await stream.in
