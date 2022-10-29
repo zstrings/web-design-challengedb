@@ -162,4 +162,32 @@ function VideoCallAgora(props:any) {
           video: true,
           cameraId: cameraId,
         });
-        await stream.in
+        await stream.init();
+        localStream.replaceTrack(stream.getVideoTrack())
+      }
+    }
+  }
+
+  const changeMicrophone = async (e: React.ChangeEvent<unknown>) => {
+    let microphoneId = (e.target as HTMLInputElement).value;
+    if (microphoneId == state.microphoneId) {
+      return
+    } else {
+      update("setMicrophone")(e);
+      if (localStream) {
+        const stream = AgoraRTC.createStream({
+          video: false,
+          audio: true,
+          microphoneId: microphoneId,
+        });
+        await stream.init();
+        localStream.replaceTrack(stream.getAudioTrack())
+      }
+    }
+  }
+
+  // Starts the video call
+  const join = async () => {
+    // Creates a new agora client with given parameters.
+    // mode can be 'rtc' for real time communications or 'live' for live broadcasting.
+    const client = AgoraRTC.createClient({ mode: state.mode, codec: state.code
