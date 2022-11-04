@@ -219,4 +219,33 @@ function VideoCallAgora(props:any) {
       // stream.setVideoProfile('480p_4')
 
       // Initalize the stream
-      await st
+      await stream.init();
+
+      // Publish the stream to the channel.
+      await client.publish(stream);
+
+      // Set the state appropriately
+      setIsPublished(true);
+      setisJoined(true);
+      enqueueSnackbar(`Joined channel ${state.channel}`, { variant: "info" });
+    } catch (err) {
+      enqueueSnackbar(`Failed to join, ${err}`, { variant: "error" });
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  // Publish function to publish the stream to Agora. No need to invoke this after join.
+  // This is to be invoke only after an unpublish
+  const publish = async () => {
+    setIsLoading(true);
+    try {
+      if (localStream) {
+        // Publish the stream to the channel.
+        await agoraClient.publish(localStream);
+        setIsPublished(true);
+      }
+      enqueueSnackbar("Stream published", { variant: "info" });
+    } catch (err) {
+      enqueueSnackbar(`Failed to publish, ${err}`, { variant: "error" });
+    } fi
