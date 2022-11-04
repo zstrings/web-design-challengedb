@@ -190,4 +190,33 @@ function VideoCallAgora(props:any) {
   const join = async () => {
     // Creates a new agora client with given parameters.
     // mode can be 'rtc' for real time communications or 'live' for live broadcasting.
-    const client = AgoraRTC.createClient({ mode: state.mode, codec: state.code
+    const client = AgoraRTC.createClient({ mode: state.mode, codec: state.codec });
+    // Loads client into the state
+    setClient(client);
+    setIsLoading(true);
+    try {
+      const uid = isNaN(Number(state.uid)) ? null : Number(state.uid);
+      
+      // initializes the client with appId
+      await client.init(state.appId);
+
+      // TBC: some errors in client.join might be caught without throwing the error again
+      // e.g invalid token
+      // which causing error handling in this function not working
+      // joins a channel with a token, channel, user id
+      await client.join(state.token, state.channel, uid);
+      
+      // create a ne stream
+      const stream = AgoraRTC.createStream({
+        streamID: uid || 12345,
+        video: true,
+        audio: true,
+        screen: false,
+        cameraId: state.cameraId,
+        microphoneId: state.microphoneId,
+      });
+
+      // stream.setVideoProfile('480p_4')
+
+      // Initalize the stream
+      await st
