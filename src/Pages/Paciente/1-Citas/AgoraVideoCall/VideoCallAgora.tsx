@@ -248,4 +248,36 @@ function VideoCallAgora(props:any) {
       enqueueSnackbar("Stream published", { variant: "info" });
     } catch (err) {
       enqueueSnackbar(`Failed to publish, ${err}`, { variant: "error" });
-    } fi
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  // Leaves the channel on invoking the function call.
+  const leave = async () => {
+    setIsLoading(true);
+    try {
+      if (localStream) {
+        // Closes the local stream. This de-allocates the resources and turns off the camera light
+        localStream.close();
+        // unpublish the stream from the client
+        agoraClient.unpublish(localStream);
+      }
+      // leave the channel
+      await agoraClient.leave();
+      setIsPublished(false);
+      setisJoined(false);
+      enqueueSnackbar("Left channel", { variant: "info" });
+    } catch (err) {
+      enqueueSnackbar(`Failed to leave, ${err}`, { variant: "error" });
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  // Used to unpublish the stream.
+  const unpublish = () => {
+    if (localStream) {
+      // unpublish the stream from the client
+      agoraClient.unpublish(localStream);
+      setIsPublished(false);
