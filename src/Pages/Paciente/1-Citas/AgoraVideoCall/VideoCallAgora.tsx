@@ -281,3 +281,42 @@ function VideoCallAgora(props:any) {
       // unpublish the stream from the client
       agoraClient.unpublish(localStream);
       setIsPublished(false);
+      enqueueSnackbar("Stream unpublished", { variant: "info" });
+    }
+  };
+
+  const JoinLeaveBtn = () => {
+    return (
+      <Button
+        className={classes.buttonItem}
+        color={isJoined ? "secondary" : "primary"}
+        onClick={isJoined ? leave : join}
+        variant="contained"
+        disabled={isLoading}
+      >
+        {isJoined ? "Leave" : "Join"}
+      </Button>
+    );
+  };
+
+  const PubUnpubBtn = () => {
+    return (
+      <Button
+        className={classes.buttonItem}
+        color={isPublished ? "secondary" : "default"}
+        onClick={isPublished ? unpublish : publish}
+        variant="contained"
+        disabled={!isJoined || isLoading}
+      >
+        {isPublished ? "Unpublish" : "Publish"}
+      </Button>
+    );
+  };
+
+  return (
+    <React.Fragment>
+    
+      <Container>
+        <Grid container spacing={3}>
+          {/* form */}
+          <Grid item
