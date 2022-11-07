@@ -346,4 +346,30 @@ function VideoCallAgora(props:any) {
                     value={state.token}
                     onChange={update("setToken")}
                     id="token"
-                 
+                    label="Token"
+                    fullWidth
+                    margin="normal"
+                  />
+                </form>
+              </CardContent>
+              <CardActions className={classes.buttonContainer}>
+                <JoinLeaveBtn />
+                {/* <PubUnpubBtn /> */}
+              </CardActions>
+            </Card>
+
+            {/* advanced settings */}
+            <ThemeProvider
+              theme={createMuiTheme({
+                palette: {
+                  type: "dark"
+                }
+              })}
+            >
+              <ExpansionPanel className={classes.advanceSettings}>
+                <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
+                  <Typography>Configuracion avanzada</Typography>
+                </ExpansionPanelSummary>
+                <ExpansionPanelDetails>
+                  <form noValidate autoComplete="off">
+                  
