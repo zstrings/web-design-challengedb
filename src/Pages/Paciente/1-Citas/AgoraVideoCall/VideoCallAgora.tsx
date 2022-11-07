@@ -319,4 +319,31 @@ function VideoCallAgora(props:any) {
       <Container>
         <Grid container spacing={3}>
           {/* form */}
-          <Grid item
+          <Grid item xs={12} md={4}>
+            <Card>
+              <CardContent>
+                <form noValidate autoComplete="off">
+                  <TextField
+                    required
+                    value={state.appId}
+                    onChange={update("setAppId")}
+                    id="appId"
+                    label="App ID"
+                    fullWidth
+                    margin="normal"
+                  />
+                  <TextField
+                    required
+                    value={state.channel}
+                    onChange={update("setChannel")}
+                    id="channel"
+                    label="Channel"
+                    fullWidth
+                    margin="normal"
+                  />
+
+                  <TextField
+                    value={state.token}
+                    onChange={update("setToken")}
+                    id="token"
+                 
