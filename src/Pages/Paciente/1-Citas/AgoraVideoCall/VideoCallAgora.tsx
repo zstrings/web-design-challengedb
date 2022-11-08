@@ -372,4 +372,29 @@ function VideoCallAgora(props:any) {
                 </ExpansionPanelSummary>
                 <ExpansionPanelDetails>
                   <form noValidate autoComplete="off">
-                  
+                    <TextField
+                      value={state.uid}
+                      id="uid"
+                      onChange={update("setUid")}
+                      label="UID"
+                      fullWidth
+                      margin="normal"
+                    />
+                    <TextField
+                      id="cameraId"
+                      value={state.cameraId}
+                      onChange={changeCamera}
+                      select
+                      label="Camera"
+                      helperText="Please select your camera"
+                      fullWidth
+                      margin="normal"
+                    >
+                      {cameraList.map(item => (
+                        <MenuItem key={item.deviceId} value={item.deviceId}>
+                          {item.label}
+                        </MenuItem>
+                      ))}
+                    </TextField>
+                    <TextField
+             
