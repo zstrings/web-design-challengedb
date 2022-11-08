@@ -397,4 +397,25 @@ function VideoCallAgora(props:any) {
                       ))}
                     </TextField>
                     <TextField
-             
+                      id="microphoneId"
+                      value={state.microphoneId}
+                      onChange={changeMicrophone}
+                      select
+                      label="Microphone"
+                      helperText="Please select your microphone"
+                      fullWidth
+                      margin="normal"
+                    >
+                      {microphoneList.map(item => (
+                        <MenuItem key={item.deviceId} value={item.deviceId}>
+                          {item.label}
+                        </MenuItem>
+                      ))}
+                    </TextField>
+
+                    <FormControl fullWidth component="fieldset" margin="normal">
+                      <FormLabel>Mode</FormLabel>
+                      <RadioGroup
+                        row
+                        value={state.mode}
+                        onChange={upda
