@@ -418,4 +418,28 @@ function VideoCallAgora(props:any) {
                       <RadioGroup
                         row
                         value={state.mode}
-                        onChange={upda
+                        onChange={update("setMode")}
+                      >
+                        <FormControlLabel
+                          value="live"
+                          control={<Radio color="primary" />}
+                          label="live"
+                        />
+                        <FormControlLabel
+                          value="rtc"
+                          control={<Radio color="primary" />}
+                          label="rtc"
+                        />
+                      </RadioGroup>
+                    </FormControl>
+
+                    <FormControl fullWidth component="fieldset" margin="normal">
+                      <FormLabel>Codec</FormLabel>
+                      <RadioGroup
+                        row
+                        value={state.codec}
+                        onChange={update("setCodec")}
+                      >
+                        <FormControlLabel
+                          value="vp8"
+                          
