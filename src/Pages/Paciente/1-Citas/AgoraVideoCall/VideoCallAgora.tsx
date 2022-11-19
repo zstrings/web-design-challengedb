@@ -442,4 +442,30 @@ function VideoCallAgora(props:any) {
                       >
                         <FormControlLabel
                           value="vp8"
-                          
+                          control={<Radio color="primary" />}
+                          label="vp8"
+                        />
+                        <FormControlLabel
+                          value="h264"
+                          control={<Radio color="primary" />}
+                          label="h264"
+                        />
+                      </RadioGroup>
+                    </FormControl>
+                  </form>
+                </ExpansionPanelDetails>
+              </ExpansionPanel>
+            </ThemeProvider>
+          </Grid>
+
+          {/* display area */}
+          <Grid item xs={12} md={8}>
+            {localStream && (
+              <StreamPlayer stream={localStream} fit="contain" label="local" />
+            )}
+            {remoteStreamList.map((stream: any) => (
+              <StreamPlayer
+                key={stream.getId()}
+                stream={stream}
+                fit="contain"
+            
