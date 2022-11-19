@@ -468,4 +468,24 @@ function VideoCallAgora(props:any) {
                 key={stream.getId()}
                 stream={stream}
                 fit="contain"
-            
+                label={stream.getId()}
+              />
+            ))}
+          </Grid>
+        </Grid>
+      </Container>
+    </React.Fragment>
+  );
+}
+
+export default function AppWithNotification(props:any) {
+  return (
+    <SnackbarProvider
+      anchorOrigin={{ vertical: "top", horizontal: "right" }}
+      autoHideDuration={2500}
+      maxSnack={5}
+    >
+      <VideoCallAgora {...props}/>
+    </SnackbarProvider>
+  );
+}
