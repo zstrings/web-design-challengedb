@@ -82,3 +82,10 @@ const useMediaStream = (client: any, filter?: (streamId: number) => boolean): an
       }
     };
   // a missing dependency
+  }, [client, filter, remoteStreamList]);
+
+  // memorization for better performance
+  return useMemo(() => [localStream, remoteStreamList], [localStream, remoteStreamList]);
+};
+
+export default useMediaStream;
