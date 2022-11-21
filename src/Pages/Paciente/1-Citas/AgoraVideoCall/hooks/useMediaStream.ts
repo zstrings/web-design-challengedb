@@ -58,4 +58,27 @@ const useMediaStream = (client: any, filter?: (streamId: number) => boolean): an
       stream.stop = (func => () => {
         func()     
         setLocalStream(undefined);   
-      })(stop
+      })(stop);
+      setLocalStream(stream)
+    };
+
+    if (client) {
+      client.on("stream-published", addLocal);
+      client.on("stream-added", doSub);
+      client.on("stream-subscribed", addRemote);
+      client.on("peer-leave", removeRemote);
+      client.on("stream-removed", removeRemote);
+    }
+
+    return () => {
+      mounted = false;
+      if (client) {
+        // Maintains the list of users based on the various network events.
+        client.gatewayClient.removeEventListener("stream-published", addLocal);
+        client.gatewayClient.removeEventListener("stream-added", doSub);
+        client.gatewayClient.removeEventListener("stream-subscribed", addRemote);
+        client.gatewayClient.removeEventListener("peer-leave", removeRemote);
+        client.gatewayClient.removeEventListener("stream-removed", removeRemote);
+      }
+    };
+  // a missing dependency
