@@ -34,4 +34,27 @@ const columns = [
                 return (
                     <Button
                         //href="/dummy"
-                     
+                        //onClick={(e) => this.handleclickLink({ idEval, ...e })}
+                        variant="contained"
+                        color="primary"
+                    // onClick={() => {
+                    //     console.log("Redicreccion desde CursoXHorario goback");
+                    //     props.history.goBack();
+                    // }}
+                    >
+                        Iniciar Sesión
+                    </Button>
+                );
+            } else {
+                return <Typography>Finalizado</Typography>;
+            }
+        },
+    },
+];
+
+const Citas = (props) => {
+    // function setFakeDataTable() {
+    //     const data = [
+    //         { fecha: "15/05/2021", hora: "10:00 - 11:00", psico: "Manuel Tapia", estado: 1 },
+    //         { fecha: "15/05/2021", hora: "10:00 - 11:00", psico: "Manuel Tapia", estado: 1 },
+    //         { fecha: "15/05/2021", hora:
