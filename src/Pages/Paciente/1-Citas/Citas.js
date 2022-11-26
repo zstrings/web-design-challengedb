@@ -72,4 +72,38 @@ const Citas = (props) => {
     const [data, setData] = React.useState([]);
     //const [loading, setLoading] = React.useState(true);
 
-    //async function setRows(
+    //async function setRows() {
+    // async function setRows(listaCitas) {
+
+    //     //setFakeDataTable(fakeData);
+    //     //let listaCitas = await fake_getListaCitas();
+    //     //let data = [];
+
+    //     if (listaCitas && listaCitas.length > 0) {
+    //         listaCitas.forEach((element, index) => {
+    //             //element.nro = index + 1;
+    //             data.push(element);
+    //         });
+
+    //         setData(data);
+
+    //     }
+    //     setLoading(false);
+    //     //-----------
+    //     // let data = await fake_getListaCitas();
+    //     // setData(data);
+    //     // setLoading(false);
+
+    // }
+
+    const callData = async () => {
+        //setLoading(true);
+        const vale = await fake_getListaCitas();
+        console.log("XXXvale-> useEfct->", vale);
+        if (vale && vale.length > 0) {
+            setData(vale);
+        }
+        //setLoading(false);
+
+        //---
+        
