@@ -107,3 +107,33 @@ const Citas = (props) => {
 
         //---
         
+        // const idUser = 7; //getUser().id +-...
+        // try {
+        //     const res = await axios.get(process.env.REACT_APP_MAIN_SERVER + `/listarCitasPaciente/${idUser}`);
+        //     if (res && res.data.length > 0) {
+        //         let vale = res.data;
+        //         vale.forEach((element, index) => {
+        //             element.nro = index + 1;
+        //         });
+        //         setData(vale);
+        //     }
+        // } catch (error) {
+        //     console.log('Error en catch de listarCitasPaciente');
+        // }
+
+    };
+
+    useEffect(() => {
+        props.makeSubtitulo(" MIS CITAS");
+        //callBack to set data table
+
+        // const asdas = setFakeDataTable();
+        // //console.log('fakeDataTable-> ', fakeData);
+        // setRows(asdas);
+
+        //-------
+        // const tys = setFakeDataTable();
+        // setRows(tys);
+
+        //-------
+        //setRow
