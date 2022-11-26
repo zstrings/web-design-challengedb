@@ -136,4 +136,32 @@ const Citas = (props) => {
         // setRows(tys);
 
         //-------
-        //setRow
+        //setRows();
+        callData();
+    });
+
+    return (
+        <div>
+            <div style={{ display: "flex", justifyContent: 'flex-end' }}>
+                <Button
+                    color="primary"
+                    variant="contained"
+                    onClick={() => {
+                        props.history.push("/paciente/citas/agendar");
+                    }}
+                >
+                    Agendar Cita
+            </Button>
+            </div>
+
+            <JTableSSJ
+                loading={false}
+                rows={data}
+                columns={columns}
+            //title={"son cositas de la vida"}.. si descomento se  muere el navegador .. to investigate
+            />
+        </div>
+    );
+};
+
+export default Citas;
