@@ -58,4 +58,13 @@ const PacienteMainPage = props => {
             <Route exact path="/paciente/grupos-apoyo" component={(props) => <GruposDeApoyo {...props} makeSubtitulo={makeSubtitulo} />} />
             <Route exact path="/paciente/grupos-apoyo/mis-grupos-accion" component={(props) => <MisGruposDeAccion {...props} makeSubtitulo={makeSubtitulo} />} />
 
-            <Route exact path="/paciente/encuestas" component={(props) => <Encuestas {...
+            <Route exact path="/paciente/encuestas" component={(props) => <Encuestas {...props} makeSubtitulo={makeSubtitulo} />} />
+
+
+
+            {/* Paciente */}
+        </PageWrapper>
+    );
+}
+
+export default PacienteMainPage;
