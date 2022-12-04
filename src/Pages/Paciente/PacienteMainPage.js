@@ -24,4 +24,27 @@ const PacienteMainPage = props => {
     //     setFakeData(data);
     
     // }
-    const [subtitulo, setSubt
+    const [subtitulo, setSubtitulo] = useState(undefined);
+    const makeSubtitulo = (_subtitulo) => {
+        setSubtitulo(_subtitulo);
+    }
+
+    useEffect(() => {
+        document.title = "Serenity | Paciente";
+        // createFakeData();
+        // console.log('afterCreateeee');
+    });
+
+    return (
+        <PageWrapper {...props} subtitulo={subtitulo}>
+            <Route exact path="/paciente" component={(props) =>
+                <Citas
+                    {...props}
+                    // fakeData ={fakeData}
+                    makeSubtitulo={makeSubtitulo}
+                    />
+            } />
+
+            <Route exact path="/paciente/citas" component={(props) => <Citas {...props} makeSubtitulo={makeSubtitulo} />} />
+            <Route exact path="/paciente/citas/agendar" component={(props) => <AgendarCita {...props} makeSubtitulo={makeSubtitulo} />} />
+            <Route exact path="/paciente/citas/sesion" component={
