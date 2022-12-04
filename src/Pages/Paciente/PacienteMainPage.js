@@ -47,4 +47,15 @@ const PacienteMainPage = props => {
 
             <Route exact path="/paciente/citas" component={(props) => <Citas {...props} makeSubtitulo={makeSubtitulo} />} />
             <Route exact path="/paciente/citas/agendar" component={(props) => <AgendarCita {...props} makeSubtitulo={makeSubtitulo} />} />
-            <Route exact path="/paciente/citas/sesion" component={
+            <Route exact path="/paciente/citas/sesion" component={(props) => <SesionVideoLlamada {...props} makeSubtitulo={makeSubtitulo} />} />
+
+
+            <Route exact path="/paciente/plan-accion" component={(props) => <PlanesDeAccion {...props} makeSubtitulo={makeSubtitulo} />} />
+            <Route exact path="/paciente/plan-accion/actividades" component={(props) => <ActividadesXPlanDeAccion {...props} makeSubtitulo={makeSubtitulo} />} />
+
+            <Route exact path="/paciente/diarios" component={(props) => <Diarios {...props} makeSubtitulo={makeSubtitulo} />} />
+
+            <Route exact path="/paciente/grupos-apoyo" component={(props) => <GruposDeApoyo {...props} makeSubtitulo={makeSubtitulo} />} />
+            <Route exact path="/paciente/grupos-apoyo/mis-grupos-accion" component={(props) => <MisGruposDeAccion {...props} makeSubtitulo={makeSubtitulo} />} />
+
+            <Route exact path="/paciente/encuestas" component={(props) => <Encuestas {...
