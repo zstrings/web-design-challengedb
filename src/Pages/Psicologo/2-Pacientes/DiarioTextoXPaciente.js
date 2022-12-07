@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class CitasXPaciente extends Component {
+class DiarioTextoXPaciente extends Component {
     render() {
         return (
             <div>
@@ -10,4 +10,4 @@ class CitasXPaciente extends Component {
     }
 }
 
-export default CitasXPaciente;
+export default DiarioTextoXPaciente;

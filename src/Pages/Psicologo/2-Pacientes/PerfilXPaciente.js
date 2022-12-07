@@ -1,6 +1,7 @@
+
 import React, { Component } from 'react';
 
-class CitasXPaciente extends Component {
+class PerfilXPaciente extends Component {
     render() {
         return (
             <div>
@@ -10,4 +11,4 @@ class CitasXPaciente extends Component {
     }
 }
 
-export default CitasXPaciente;
+export default PerfilXPaciente;
