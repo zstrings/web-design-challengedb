@@ -22,4 +22,14 @@ const PsicologoMainPage =props=> {
         return (
             <PageWrapper {...props} subtitulo={subtitulo}>
                 <Route exact path="/psicologo" component={(props)=><Agenda {...props} makeSubtitulo={makeSubtitulo}/>} />
-                <Route exact path="/psicologo/age
+                <Route exact path="/psicologo/agenda" component={(props)=><Agenda {...props} makeSubtitulo={makeSubtitulo}/>} />
+                <Route exact path="/psicologo/agenda/sesion" component={(props)=><SesionVideoLlamada {...props}/>} />
+            
+                <Route exact path="/psicologo/pacientes" component={(props)=><Agenda {...props}/>} />
+                <Route exact path="/psicologo/pacientes/citas" component={(props)=><CitasXPaciente {...props}/>} />
+                <Route exact path="/psicologo/pacientes/diario-texto" component={(props)=><DiarioTextoXPaciente {...props}/>} />
+                <Route exact path="/psicologo/pacientes/diario-audio" component={(props)=><DirarioAudioXPaciente {...props}/>} />
+                <Route exact path="/psicologo/pacientes/perfil" component={(props)=><PerfilXPaciente {...props}/>} />
+                <Route exact path="/psicologo/pacientes/plan-accion" component={(props)=><PlanDeAccionXPaciente {...props}/>} />
+
+                <Route exact path="/psicologo/g
