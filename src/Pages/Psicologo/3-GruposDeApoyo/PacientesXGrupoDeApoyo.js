@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class PlanDeAccionXPaciente extends Component {
+class PacientesXGrupoDeApoyo extends Component {
     render() {
         return (
             <div>
@@ -10,4 +10,4 @@ class PlanDeAccionXPaciente extends Component {
     }
 }
 
-export default PlanDeAccionXPaciente;
+export default PacientesXGrupoDeApoyo;
