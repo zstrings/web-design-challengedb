@@ -32,4 +32,12 @@ const PsicologoMainPage =props=> {
                 <Route exact path="/psicologo/pacientes/perfil" component={(props)=><PerfilXPaciente {...props}/>} />
                 <Route exact path="/psicologo/pacientes/plan-accion" component={(props)=><PlanDeAccionXPaciente {...props}/>} />
 
-                <Route exact path="/psicologo/g
+                <Route exact path="/psicologo/grupos-apoyo" component={(props)=><GruposDeApoyo {...props}/>} />
+                <Route exact path="/psicologo/pacientes-grupo-apoyo" component={(props)=><PacientesXGrupoDeApoyo {...props}/>} />
+
+                Psicologo
+            </PageWrapper>
+        );
+}
+
+export default PsicologoMainPage;
