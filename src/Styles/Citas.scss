@@ -7788,3 +7788,974 @@ ul.benifits-col li i {
   .header-top {
     display: none;
   }
+  .search-box {
+    max-width: 535px;
+    margin: 0 auto;
+  }
+  .card-label > label {
+    font-size: 12px;
+  }
+  .footer .footer-top {
+    padding-bottom: 10px;
+  }
+  .time-slot li .timing.selected::before {
+    display: none;
+  }
+  .review-listing .recommend-btn {
+    float: none;
+  }
+  .dash-widget {
+    flex-direction: unset;
+    text-align: left;
+  }
+  .circle-bar {
+    margin: 0 15px 0 0;
+  }
+  .call-wrapper {
+    height: calc(100vh - 140px);
+  }
+  .sidebar-overlay.opened {
+    display: block;
+  }
+  .about-content {
+    margin-bottom: 30px;
+  }
+  .slide-image {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .custom-short-by > div {
+    margin-right: 0;
+  }
+  .product-description .doctor-img1 {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .product-description .doc-info-cont {
+    width: 100%;
+  }
+  .product-description .doc-info-left {
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 849.98px) {
+  .row.row-grid > div {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width: 767.98px) {
+  body {
+    font-size: 0.875rem;
+  }
+  h1,
+  .h1 {
+    font-size: 2rem;
+  }
+  h2,
+  .h2 {
+    font-size: 1.75rem;
+  }
+  h3,
+  .h3 {
+    font-size: 1.375rem;
+  }
+  h4,
+  .h4 {
+    font-size: 1rem;
+  }
+  h5,
+  .h5 {
+    font-size: 0.875rem;
+  }
+  h6,
+  .h6 {
+    font-size: 0.75rem;
+  }
+  .content {
+    padding: 15px 0 0;
+  }
+  .account-page .content {
+    padding: 15px 0;
+  }
+  .container-fluid {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .carousel-item {
+    height: auto;
+    min-height: auto;
+  }
+  .card {
+    margin-bottom: 20px;
+  }
+  .profile-sidebar {
+    margin-bottom: 20px;
+  }
+  .appointment-tab {
+    margin-bottom: 20px;
+  }
+  .features-slider .slick-dots,
+  .features-img img {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .doctor-slider {
+    margin-top: 25px;
+  }
+  .breadcrumb-bar {
+    height: auto;
+  }
+  .login-right {
+    margin: 0 15px;
+    padding: 15px;
+  }
+  .chat-cont-left
+    .chat-users-list
+    a.media
+    .media-body
+    > div:first-child
+    .user-name,
+  .chat-cont-left
+    .chat-users-list
+    a.media
+    .media-body
+    > div:first-child
+    .user-last-chat {
+    max-width: 250px;
+  }
+  .chat-window .chat-cont-right .chat-header .media .media-body {
+    display: none;
+  }
+  .banner-wrapper .banner-header h1 {
+    font-size: 2rem;
+  }
+  .banner-wrapper .banner-header p {
+    font-size: 1rem;
+  }
+  .section-header h2 {
+    font-size: 1.875rem;
+  }
+  .section-header .sub-title {
+    font-size: 0.875rem;
+  }
+  .speicality-item p {
+    font-size: 0.875rem;
+  }
+  .section-header p {
+    font-size: 0.9375rem;
+  }
+  .footer-title {
+    font-size: 1.125rem;
+  }
+  .search-box {
+    max-width: 535px;
+    margin: 0 auto;
+  }
+  .search-box form {
+    -ms-flex-direction: column;
+    flex-direction: column;
+    word-wrap: break-word;
+    background-clip: border-box;
+  }
+  .search-box .search-location {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    width: 100%;
+  }
+  .search-box .search-info {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    width: 100%;
+  }
+  .search-box .search-btn {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    min-height: 46px;
+    width: 100%;
+  }
+  .search-box .search-btn span {
+    display: inline-block;
+    margin-left: 5px;
+    text-transform: uppercase;
+  }
+  .section-search {
+    background: #f9f9f9;
+  }
+  .day-slot li span {
+    font-size: 16px;
+    text-transform: unset;
+  }
+  .time-slot li .timing span {
+    display: block;
+  }
+  .submit-section.proceed-btn {
+    margin-bottom: 20px;
+  }
+  .day-slot li small.slot-year {
+    display: none;
+  }
+  .success-cont h3 {
+    font-size: 22px;
+  }
+  .view-inv-btn {
+    font-size: 14px;
+    padding: 10px 30px;
+  }
+  .invoice-info.invoice-info2 {
+    text-align: left;
+  }
+  .invoice-item .invoice-details {
+    text-align: left;
+  }
+  .section-search,
+  .section-doctor,
+  .section-features {
+    padding: 50px 0;
+  }
+  .slick-next {
+    right: -10px;
+  }
+  .slick-prev {
+    left: -10px;
+  }
+  .specialities-slider .slick-slide {
+    margin-right: 15px;
+  }
+  .about-content a {
+    padding: 12px 20px;
+  }
+  .submit-section .submit-btn {
+    padding: 10px 20px;
+    font-size: 15px;
+    min-width: 105px;
+  }
+  .policy-menu {
+    margin-top: 10px;
+    text-align: left;
+  }
+  .booking-doc-info .booking-doc-img {
+    width: 75px;
+  }
+  .booking-doc-info .booking-doc-img img {
+    height: 75px;
+    width: 75px;
+  }
+  .btn.btn-danger.trash {
+    margin-bottom: 20px;
+  }
+  .nav-tabs.nav-tabs-bottom > li > a.active,
+  .nav-tabs.nav-tabs-bottom > li > a.active:hover,
+  .nav-tabs.nav-tabs-bottom > li > a.active:focus {
+    background-color: #f5f5f5;
+  }
+  .nav-tabs.nav-justified {
+    border-bottom: 1px solid #ddd;
+  }
+  .nav-tabs.nav-justified > li > a.active,
+  .nav-tabs.nav-justified > li > a.active:hover,
+  .nav-tabs.nav-justified > li > a.active:focus {
+    border-color: transparent transparent transparent #20c0f3;
+    border-left-width: 2px;
+  }
+  .nav-tabs {
+    border-bottom: 0;
+    position: relative;
+    background-color: #fff;
+    padding: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+  }
+  .nav-tabs .nav-item {
+    margin-bottom: 0;
+  }
+  .nav-tabs > li > a {
+    border-width: 2px;
+    border-left-color: transparent;
+  }
+  .nav-tabs .nav-link {
+    border-width: 2px;
+  }
+  .nav-tabs > li > a:hover,
+  .nav-tabs > li > a:focus {
+    background-color: #fafafa;
+  }
+  .nav-tabs .nav-item.show .nav-link,
+  .nav-tabs .nav-link.active,
+  .nav-tabs > li > a.active,
+  .nav-tabs > li > a.active:hover,
+  .nav-tabs > li > a.active:focus {
+    border-color: transparent transparent transparent #20c0f3 !important;
+    border-left-width: 2px;
+  }
+  .nav-tabs > li.open:not(.active) > a,
+  .nav-tabs > li.open:not(.active) > a:hover,
+  .nav-tabs > li.open:not(.active) > a:focus {
+    background-color: #fafafa;
+  }
+  .nav-tabs.nav-tabs-solid {
+    padding: 5px;
+  }
+  .nav-tabs.nav-tabs-solid.nav-tabs-rounded {
+    border-radius: 5px;
+  }
+  .nav-tabs.nav-tabs-solid > li > a {
+    border-left-width: 0 !important;
+  }
+  .nav-tabs-justified {
+    border-bottom: 1px solid #ddd;
+  }
+  .nav-tabs-justified > li > a.active,
+  .nav-tabs-justified > li > a.active:hover,
+  .nav-tabs-justified > li > a.active:focus {
+    border-width: 0 0 0 2px;
+    border-left-color: #20c0f3;
+  }
+  .review-listing > ul li .comment .comment-body .meta-data span.comment-date {
+    margin-bottom: 5px;
+  }
+  .review-listing > ul li .comment .comment-body .meta-data .review-count {
+    position: unset;
+  }
+  .my-video ul li {
+    width: 50px;
+  }
+  .call-users ul li {
+    width: 50px;
+  }
+  .call-mute {
+    font-size: 20px;
+    height: 50px;
+    line-height: 50px;
+    width: 50px;
+  }
+  .call-duration {
+    font-size: 24px;
+  }
+  .voice-call-avatar .call-avatar {
+    height: 100px;
+    width: 100px;
+  }
+  .user-tabs {
+    margin-top: 1.5rem;
+  }
+  .user-tabs .nav-tabs > li > a {
+    border-left: 2px solid transparent;
+    border-bottom: 0;
+    padding: 0.5rem 1rem;
+  }
+  .user-tabs .nav-tabs.nav-tabs-bottom > li > a.active,
+  .user-tabs .nav-tabs.nav-tabs-bottom > li > a.active:hover,
+  .user-tabs .nav-tabs.nav-tabs-bottom > li > a.active:focus {
+    border-left-width: 2px;
+    color: #20c0f3;
+  }
+  .doctor-widget {
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+  }
+  .doc-info-right {
+    margin-left: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .doc-info-left {
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .clinic-services {
+    display: none;
+  }
+  .doctor-img {
+    margin: 0 auto 20px;
+  }
+  .doctor-action {
+    justify-content: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+  }
+  .row.row-grid > div {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .breadcrumb-bar .breadcrumb-title {
+    font-size: 18px;
+  }
+  .dash-widget h6 {
+    font-size: 15px;
+  }
+  .dash-widget h3 {
+    font-size: 20px;
+  }
+  .dash-widget p {
+    font-size: 13px;
+  }
+  .doctor-widget .doc-name {
+    font-size: 18px;
+  }
+  .exp-title,
+  .booking-total ul li span,
+  .booking-total ul li .total-cost {
+    font-size: 14px;
+  }
+  .invoice-item .customer-text {
+    font-size: 16px;
+  }
+  .call-wrapper {
+    height: calc(100vh - 115px);
+  }
+  .appointment-tab .nav-tabs {
+    padding: 1.5rem;
+  }
+  .submit-btn-bottom {
+    margin-bottom: 20px;
+  }
+  .service-list ul li {
+    width: 50%;
+  }
+  .grid-blog .blog-title {
+    min-height: inherit;
+  }
+  .blog-title {
+    font-size: 20px;
+  }
+  .blog-view .blog-title {
+    font-size: 22px;
+  }
+  .full-slide-home .slick-prev {
+    left: 15px;
+  }
+  .full-slide-home .slick-next {
+    right: 15px;
+  }
+  .search-box1 form p {
+    margin-bottom: 15px !important;
+  }
+  .search-box1 .search-location1 {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  .product-description .doctor-widget {
+    text-align: left;
+  }
+  .pharmacy-home-slider .swiper-button-prev,
+  .pharmacy-home-slider .swiper-button-next {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 575.98px) {
+  body {
+    font-size: 0.8125rem;
+  }
+  h1,
+  .h1 {
+    font-size: 1.75rem;
+  }
+  h2,
+  .h2 {
+    font-size: 1.5rem;
+  }
+  h3,
+  .h3 {
+    font-size: 1.25rem;
+  }
+  h4,
+  .h4 {
+    font-size: 1rem;
+  }
+  h5,
+  .h5 {
+    font-size: 0.875rem;
+  }
+  h6,
+  .h6 {
+    font-size: 0.75rem;
+  }
+  .card {
+    margin-bottom: 0.9375rem;
+  }
+  .card-body {
+    padding: 1.25rem;
+  }
+  .card-header {
+    padding: 0.75rem 1.25rem;
+  }
+  .card-footer {
+    padding: 0.75rem 1.25rem;
+  }
+  .header-nav {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .header-navbar-rht {
+    display: none;
+  }
+  .main-nav li.login-link {
+    display: block;
+  }
+  .navbar-header {
+    width: 100%;
+  }
+  #mobile_btn {
+    left: 0;
+    margin-right: 0;
+    padding: 0 15px;
+    position: absolute;
+    z-index: 99;
+  }
+  .navbar-brand.logo {
+    width: 100%;
+    text-align: center;
+    margin-right: 0;
+  }
+  .navbar-brand.logo img {
+    height: 40px;
+  }
+  .search-box form {
+    display: block;
+  }
+  .search-box .search-location {
+    width: 100%;
+    -ms-flex: none;
+    flex: none;
+  }
+  .search-box .search-info {
+    width: 100%;
+    -ms-flex: none;
+    flex: none;
+  }
+  .banner-wrapper .banner-header h1 {
+    font-size: 28px;
+  }
+  .slick-next {
+    right: 0px;
+  }
+  .section-header h2 {
+    font-size: 1.5rem;
+  }
+  .section-header .sub-title {
+    font-size: 0.875rem;
+  }
+  .speicality-item p {
+    font-size: 0.875rem;
+  }
+  .section-header p {
+    font-size: 0.9375rem;
+  }
+  .footer-title {
+    font-size: 1.125rem;
+  }
+  .booking-schedule.schedule-widget {
+    overflow-x: auto;
+  }
+  .booking-schedule.schedule-widget > div {
+    width: 730px;
+  }
+  .booking-schedule .day-slot ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .booking-schedule .day-slot li {
+    -ms-flex: 0 0 100px;
+    flex: 0 0 100px;
+    width: 100px;
+  }
+  .booking-schedule .time-slot ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .booking-schedule .time-slot li {
+    -ms-flex: 0 0 100px;
+    flex: 0 0 100px;
+    width: 100px;
+  }
+  .booking-schedule .time-slot li .timing span {
+    display: inline-block;
+  }
+  .booking-schedule .day-slot li.right-arrow {
+    right: -20px;
+  }
+  .booking-doc-info .booking-doc-img {
+    width: 70px;
+  }
+  .booking-doc-info .booking-doc-img img {
+    height: 70px;
+    width: 70px;
+  }
+  .voice-call-avatar .call-avatar {
+    height: 80px;
+    width: 80px;
+  }
+  .call-duration {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 10px;
+    position: inherit;
+  }
+  .end-call {
+    margin-top: 10px;
+    position: inherit;
+  }
+  .user-tabs .med-records {
+    min-width: 110px;
+  }
+  .pagination-lg .page-link {
+    font-size: 1rem;
+    padding: 0.5rem 0.625rem;
+  }
+  .row.row-grid > div {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .edit-link {
+    font-size: 14px;
+    margin-top: 2px;
+  }
+  .invoice-content {
+    padding: 1.25rem;
+  }
+  .change-avatar .profile-img img {
+    height: 80px;
+    width: 80px;
+  }
+  .submit-btn-bottom {
+    margin-bottom: 0.9375rem;
+  }
+  .service-list ul li {
+    width: 100%;
+  }
+  .blog {
+    padding: 1.25rem;
+  }
+  .blog-title {
+    font-size: 18px;
+  }
+  .blog-view .blog-title {
+    font-size: 20px;
+  }
+  .blog-info i {
+    font-size: 14px;
+  }
+  .post-left ul li {
+    margin-right: 10px;
+  }
+  .post-left ul li:last-child {
+    margin-right: 10px;
+  }
+  .about-author-img {
+    height: 60px;
+    width: 60px;
+  }
+  .author-details {
+    margin-left: 80px;
+  }
+  .blog-comments .comments-list li img.avatar {
+    border-radius: 40px;
+    height: 40px;
+    width: 40px;
+  }
+  .blog-comments .comments-list li {
+    padding: 10px 0 0 50px;
+  }
+  .read-more {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .section-search {
+    min-height: 410px;
+    padding: 30px 15px;
+  }
+  .specialities-slider .slick-slide {
+    margin-right: 10px;
+  }
+  .speicality-img {
+    width: 120px;
+    height: 120px;
+  }
+  .speicality-img img {
+    width: 50px;
+  }
+  .clinic-booking a.view-pro-btn {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .clinic-booking a.apt-btn {
+    width: 100%;
+  }
+  .chat-cont-left
+    .chat-users-list
+    a.media
+    .media-body
+    > div:first-child
+    .user-name,
+  .chat-cont-left
+    .chat-users-list
+    a.media
+    .media-body
+    > div:first-child
+    .user-last-chat {
+    max-width: 160px;
+  }
+  .section-features,
+  .section-features,
+  .section-specialities {
+    background-color: #fff;
+    padding: 30px 0;
+  }
+  .login-header h3 a {
+    color: #0de0fe;
+    float: none;
+    font-size: 15px;
+    margin-top: 10px;
+    text-align: center;
+    display: block;
+  }
+  .login-header h3 {
+    text-align: center;
+  }
+  .appointments .appointment-list {
+    text-align: center;
+  }
+  .appointment-list .profile-info-widget {
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .appointment-list .profile-info-widget {
+    text-align: center;
+  }
+  .appointment-list .profile-info-widget .booking-doc-img {
+    margin: 0 0 15px;
+  }
+  .appointment-list .profile-info-widget .booking-doc-img img {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+  }
+  .appointment-list .profile-det-info {
+    margin-bottom: 15px;
+  }
+  .appointments .appointment-action {
+    margin-top: 0;
+  }
+  .user-tabs .nav-tabs .nav-item {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+  .review-listing .recommend-btn span {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .review-listing > ul li .comments-reply {
+    margin-left: 0;
+  }
+  .schedule-nav .nav-tabs li {
+    display: block;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    margin-right: 0;
+  }
+  .fc-header-toolbar .fc-left {
+    margin-bottom: 10px;
+  }
+  .fc-header-toolbar .fc-right {
+    margin-bottom: 10px;
+  }
+}
+.specialities-slider .slick-list {
+  height: 240px;
+}
+
+@media (max-width: 768px) {
+  .specialities-slider .slick-list {
+    height: 120px;
+  }
+  .speicality-img {
+    height: 65px;
+    box-shadow: inherit;
+  }
+}
+
+@media (max-width: 993px) {
+  .specialities-slider .slick-list {
+    height: 120px;
+  }
+  .speicality-img {
+    position: relative;
+    height: 65px;
+    box-shadow: inherit;
+  }
+}
+.main-nav a {
+  color: #000;
+}
+
+.MuiDropzoneArea-root {
+  min-height: 50px !important;
+}
+.MuiDropzoneArea-root p {
+  font-size: 15px;
+}
+.dashboard-menu.nav .nav-item {
+  position: relative;
+}
+.modal-body .react-datepicker-wrapper {
+  width: 100%;
+}
+.gm-style-iw-d .profile-widget p.speciality {
+  min-height: 18px;
+}
+
+.speicality-item:focus {
+  border: none;
+  outline: none !important;
+}
+.slick-cloned .profile-widget {
+  box-shadow: none !important;
+}
+.section-specialities .slick-dots li {
+  height: 8px;
+}
+.section-specialities .slick-dots li button {
+  color: #c0c0c0;
+  background: #c0c0c0;
+}
+.section-specialities .slick-dots li.slick-active button {
+  background-color: #0de0fe;
+}
+.section-specialities .slick-dots button {
+  height: 6px;
+  padding: 0px;
+}
+
+.header-contact-img svg {
+  font-size: 30px;
+  color: #7f7f7f;
+}
+/*.doctor-slider home page*/
+.doctor-slider .slick-prev::before {
+  font-family: "Font Awesome 5 Pro";
+
+  font-size: 22px;
+  font-weight: 900;
+}
+.doctor-slider .slick-next::before {
+  font-family: "Font Awesome 5 Pro";
+  font-size: 22px;
+  font-weight: 900;
+}
+.doctor-slider .slick-list {
+  padding: 0px;
+}
+
+/*features*/
+.features-slider .slick-list {
+  height: 170px;
+}
+.features-slider .slick-dots li {
+  height: 8px;
+}
+.features-slider .slick-dots li button {
+  color: #c0c0c0;
+  background: #c0c0c0;
+}
+.features-slider .slick-dots li.slick-active button {
+  background-color: #0de0fe;
+}
+.features-slider .slick-dots li button {
+  height: 7px;
+  padding: 0px;
+}
+.nav-tabs .nav-link {
+  border: none;
+}
+.tab-view .nav-item {
+  width: 25%;
+  text-align: center;
+  color: #000;
+  font-weight: 700;
+}
+.tab-view .nav-item.active {
+  background: none;
+  color: #20c0f3;
+  border-bottom: 3px solid #20c0f3;
+}
+.tab-view .nav-item:focus,
+.tab-view .nav-item:hover {
+  background: none;
+  color: #20c0f3;
+}
+.sortby-fliter:focus {
+  border: 1px solid #000;
+}
+.datepicker-icon {
+  max-width: 253px;
+  float: right;
+  position: relative;
+}
+.datepicker-icon input {
+  max-width: 253px;
+  position: relative;
+  padding-left: 40px;
+  padding-right: 26px;
+}
+
+.datepicker-icon i {
+  position: absolute;
+  left: 6px;
+  z-index: 1;
+  top: 14px;
+  width: 20px;
+}
+.datepicker-icon i.fas {
+  right: 6px !important;
+  left: auto;
+}
+.custom-checkbox label {
+  margin-left: 3px;
+}
+.tab-view a {
+  padding: 20px 1rem;
+}
+.RCP {
+  margin-right: 5px;
+  width: 105px !important;
+}
+.RCP svg {
+  width: 100px;
+  position: relative;
+  height: 100px;
+}
+
+.RCP .indicator-volume {
+  position: absolute;
+  position: absolute;
+  top: 30px;
+  margin-top: 0px;
+  left: 35px;
+  width: 28px;
+}
+
+/* .has-submenu:hover > .submenu{display: block;} */
+.submenu.active {
+  display: block;
+}
+
+.schedule-nav .nav-tabs a.active {
+  background: #ff4877;
+  border: 1px solid #ff4877 !important;
+  color: #fff;
+}
+.schedule-nav a {
+  padding: 7px 5px;
