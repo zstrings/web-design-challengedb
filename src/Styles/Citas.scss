@@ -8759,3 +8759,233 @@ ul.benifits-col li i {
 }
 .schedule-nav a {
   padding: 7px 5px;
+  margin: 0px 5px;
+  font-weight: normal;
+}
+.schedule-nav .nav-item {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.schedule-nav .tab-view .nav-item {
+  width: 113px;
+  font-weight: normal;
+}
+.schedule-nav .tab-content .nav-item {
+  border: none;
+}
+.schedule-nav .nav-item:hover {
+  background: #eee !important;
+  color: #000 !important;
+}
+.schedule-nav .tab-content .nav-item:hover {
+  background: #fff !important;
+}
+.btn-sm {
+  margin: 0px 2px;
+}
+.clinic-gallery a {
+  cursor: pointer;
+}
+.cal-icon .form-control {
+  border: none !important;
+}
+.cal-icon {
+  border: 1px solid #ced4da;
+}
+/* .doc-img {
+	position: absolute;    z-index: 0;} */
+.map-right {
+  z-index: 1;
+}
+.fc-button-primary.fc-button-active {
+  background: #20c0f3 !important;
+  color: #ffff !important;
+}
+.fc-button-primary {
+  background: #f1f1f1 !important;
+  border: none !important;
+  color: #797979 !important;
+}
+
+.ReactTags__tagInputField {
+  width: 100%;
+  border: 1px solid #dcdcdc;
+  padding: 10px;
+  margin-top: 10px;
+}
+.ReactTags__tags span {
+  color: #fff;
+  opacity: 1;
+  cursor: move;
+  background: #20c0f3;
+  padding: 6px;
+  margin: 5px;
+}
+.ReactTags__tagInput input:focus {
+  border: 1px solid #dcdcdc !important;
+  outline: none;
+}
+.delete-icon {
+  display: inline-block;
+}
+.user-drop button,
+.user-drop button:hover {
+  background-color: inherit !important;
+  border: none !important;
+}
+.dashboard-menu.nav a {
+  color: #757575;
+  display: block;
+  padding: 16px 20px;
+}
+.dashboard-menu.nav a span,
+.dashboard-menu.nav a i {
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 15px;
+}
+.dashboard-menu.nav .nav-item {
+  width: 100%;
+}
+.dashboard-menu.nav span:hover {
+  color: #0de0fe;
+}
+.dashboard-menu.nav a.active {
+  color: #0de0fe;
+}
+.appointment-tab .nav-tabs a.active {
+  background: #20c0f3;
+  color: #ffffff;
+  border-bottom: 3px solid #20c0f3;
+  padding: 0px;
+  border-radius: 30px;
+  /* padding: 5px; */
+  width: 130px;
+  height: 45px;
+  line-height: 45px;
+  font-weight: normal;
+}
+.appointment-tab .nav-tabs a {
+  width: 130px;
+  height: 45px;
+  line-height: 45px;
+  padding: 0px;
+  font-weight: normal;
+}
+.header-navbar-rht .dropdown-menu.show {
+  top: 20px;
+}
+.doctor-grid .profile-widget .doc-img {
+  z-index: 0;
+}
+.slick-current div:focus {
+  outline: none !important;
+}
+/* sidemenu */
+.sideBarMenuContainer {
+  position: fixed;
+  height: 100%;
+}
+
+.userMenu {
+  width: 100%;
+  text-align: center;
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-top: 0px;
+}
+
+nav.sidebar :global(.navbar-brand) :global(.glyphicon) {
+  margin-right: 0px;
+}
+
+/*Remove rounded coners*/
+nav.sidebar:global(navbar) {
+  border-radius: 0px;
+}
+
+nav.sidebar {
+  -webkit-transition: margin 200ms ease-out;
+  -moz-transition: margin 200ms ease-out;
+  -o-transition: margin 200ms ease-out;
+  transition: margin 200ms ease-out;
+}
+
+/*small/medium side display*/
+@media (min-width: 768px) {
+  /*Center Brand*/
+  nav.sidebar:global(navbar).sidebar > .container :global(.navbar-brand),
+  :global(.navbar) > :global(.container-fluid) :global(.navbar-brand) {
+    margin-left: 0px;
+  }
+  /*Center Brand*/
+  nav.sidebar :global(.navbar-brand),
+  nav.sidebar :global(.navbar-header) {
+    text-align: center;
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  /*Center Icons*/
+  nav.sidebar a {
+    padding-right: 13px;
+  }
+
+  /*adds border top to first nav box */
+  nav.sidebar :global(.navbar-nav) > li:first-child {
+    border-top: 1px #e5e5e5 solid;
+  }
+
+  /*adds border to bottom nav boxes*/
+  nav.sidebar :global(.navbar-nav) > li {
+    border-bottom: 1px #e5e5e5 solid;
+  }
+
+  /* Colors/style dropdown box*/
+  nav.sidebar :global(.navbar-nav) :global(.open) :global(.dropdown-menu) {
+    position: static;
+    float: none;
+    width: auto;
+    margin-top: 0;
+    background-color: transparent;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  /*allows nav box to use 100% width*/
+  nav.sidebar :global(.navbar-collapse),
+  nav.sidebar :global(.container-fluid) {
+    padding: 0 0px 0 0px;
+  }
+
+  /*colors dropdown box text */
+  :global(.navbar-inverse)
+    :global(.navbar-nav)
+    :global(.open)
+    :global(.dropdown-menu)
+    > li
+    > a {
+    color: #777;
+  }
+
+  /*gives sidebar width/height*/
+  nav.sidebar {
+    width: 200px;
+    height: 100%;
+    margin-left: -160px;
+    float: left;
+    z-index: 8000;
+    margin-bottom: 0px;
+  }
+
+  /*give sidebar 100% width;*/
+  nav.sidebar li {
+    width: 100%;
+  }
+
+  /* Move nav to full on mouse over*/
+  nav.sidebar:hover {
+    margin-left: 0px;
+  }
+}
