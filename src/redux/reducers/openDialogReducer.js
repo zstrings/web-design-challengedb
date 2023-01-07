@@ -11,4 +11,10 @@ const openDialogReducer = (state = estadoInicial, action) => {
         openMensaje: action.openMensaje.open,
         mensaje: action.openMensaje.mensaje,
         postClose: action.openMensaje.postClose,
-        childComponent: 
+        childComponent: action.openMensaje.childComponent,
+      };
+    default:
+      return state;
+  }
+};
+export default openDialogReducer;
