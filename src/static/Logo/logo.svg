@@ -39,4 +39,19 @@
   </g>
 </mask>
 <clipPath id="clip3">
-  <path d="M 12 5 L 65 5 L 
+  <path d="M 12 5 L 65 5 L 65 58 L 12 58 Z M 12 5 "/>
+</clipPath>
+<clipPath id="clip4">
+  <path d="M 45.765625 0.296875 L 69.34375 50.375 L 23.9375 71.753906 L 0.359375 21.675781 Z M 45.765625 0.296875 "/>
+</clipPath>
+<clipPath id="clip5">
+  <path d="M 45.765625 0.296875 L 69.34375 50.375 L 23.9375 71.753906 L 0.359375 21.675781 Z M 45.765625 0.296875 "/>
+</clipPath>
+<clipPath id="clip2">
+  <rect x="0" y="0" width="70" height="64"/>
+</clipPath>
+<g id="surface5" clip-path="url(#clip2)">
+<g clip-path="url(#clip3)" clip-rule="nonzero">
+<g clip-path="url(#clip4)" clip-rule="nonzero">
+<g clip-path="url(#clip5)" clip-rule="nonzero">
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(12.548828%,75.289917%,95.289612%);fill-opacity:1;" d="M 57.984375 55.515625 C 71.195312 45.851562 63.113281 28.046875 47.46875 30.085938 C 59.003906 19.324219 50.433594 1.753906 34.566406 5.7
