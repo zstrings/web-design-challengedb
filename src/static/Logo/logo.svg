@@ -78,4 +78,22 @@
 </clipPath>
 <g id="surface8" clip-path="url(#clip6)">
 <g clip-path="url(#clip7)" clip-rule="nonzero">
-<g clip-path="u
+<g clip-path="url(#clip8)" clip-rule="nonzero">
+<g clip-path="url(#clip9)" clip-rule="nonzero">
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(12.548828%,75.289917%,95.289612%);fill-opacity:1;" d="M 11.875 55.554688 C -1.347656 45.902344 6.71875 28.09375 22.367188 30.113281 C 10.816406 19.367188 19.367188 1.78125 35.238281 5.789062 C 49.640625 9.421875 57.578125 46.640625 57.578125 46.640625 C 57.578125 46.640625 23.871094 64.3125 11.875 55.554688 Z M 11.875 55.554688 "/>
+</g>
+</g>
+</g>
+</g>
+<mask id="mask2">
+  <g filter="url(#alpha)">
+<rect x="0" y="0" width="375" height="74.999997" style="fill:rgb(0%,0%,0%);fill-opacity:0.8;stroke:none;"/>
+  </g>
+</mask>
+<clipPath id="clip11">
+  <path d="M 0.472656 0.5 L 55.824219 0.5 L 55.824219 50.683594 L 0.472656 50.683594 Z M 0.472656 0.5 "/>
+</clipPath>
+<clipPath id="clip10">
+  <rect x="0" y="0" width="57" height="51"/>
+</clipPath>
+<g id="sur
