@@ -96,4 +96,13 @@
 <clipPath id="clip10">
   <rect x="0" y="0" width="57" height="51"/>
 </clipPath>
-<g id="sur
+<g id="surface11" clip-path="url(#clip10)">
+<g clip-path="url(#clip11)" clip-rule="nonzero">
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(12.159729%,46.669006%,76.858521%);fill-opacity:1;" d="M 55.636719 12.964844 C 52.515625 -3.105469 32.96875 -3.375 28.148438 11.648438 C 23.328125 -3.375 3.777344 -3.105469 0.660156 12.964844 C -2.171875 27.542969 28.148438 50.546875 28.148438 50.546875 C 28.148438 50.546875 58.464844 27.542969 55.636719 12.964844 Z M 55.636719 12.964844 "/>
+</g>
+</g>
+</defs>
+<g id="surface1">
+<rect x="0" y="0" width="375" height="74.999997" style="fill:rgb(100%,100%,100%);fill-opacity:1;stroke:none;"/>
+<rect x="0" y="0" width="375" height="74.999997" style="fill:rgb(100%,100%,100%);fill-opacity:1;stroke:none;"/>
+<rect x="0" y="0" width="375" height="74.999997" style="fill:rgb(100%,100%,100%);fill-opacity:1;str
